@@ -150,23 +150,13 @@ a.menu-item2 {
   background: rgba(0, 0, 0, 0.9);
   transition: 1s 0.4s;
 }
+
 #progress {
   height: auto;
-  background: #fff;
   position: absolute;
   width: auto;
   top: 50%;
   left: 50%;
-}
-#progstat {
-  font-size: 0.7em;
-  letter-spacing: 3px;
-  position: absolute;
-  top: 50%;
-  margin-top: -40px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
 }
 
 .loader {
@@ -215,6 +205,18 @@ a.project_link {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+a.menu-links {
+  /* border-bottom:1px solid; */
+  text-decoration: none;
+  padding: 2px;
+  color: white;
+  font-size: 10px;
+}
+a.menu-links.active {
+  font-weight: bold;
+  color: #b00020;
 }
 /* Extra small devices (portrait phones, less than 576px) */
 /* @media (max-width: 575px) {

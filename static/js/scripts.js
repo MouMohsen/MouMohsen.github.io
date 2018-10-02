@@ -68,6 +68,8 @@ $('.close-btn').on('click', function() {
   document.getElementById('sidebar-menu').style.left = '-320px';
   // document.getElementsByClassName('menu-item active')[0].innerHTML = current;
 });
+
+$(document).ready(function() {});
 // $('.logo-icon').on('click', function() {
 //   document.getElementById('sidebar-menu').style.left = '-320px';
 //   // document.getElementsByClassName('menu-item active')[0].innerHTML = current;
