@@ -3,6 +3,11 @@
 <head>
   <title>MouSpace</title>
   <meta charset="utf-8">
+  <meta property="og:title" content="MouMohsen Portofolio">
+  <meta property="og:description" content="A Backend Developer">
+  <meta property="og:image" content="./meta-img.png">
+  <meta property="og:url" content="https://moumohsen.github.io">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -82,75 +87,75 @@
     <div class="loader" id='progress'></div>
   </div>
 
-<div id="fullpage">
-  <!-- Home -->
-  <div class="section" id='section1'>
-    <div class="homeContent">
-      <!-- <img src="http://placehold.it/3000x3000/cf5"> -->
-      <div class="homeHeading"> <span class="marked">Mou</span>Mohsen</div>
-      <span>Geeky Backend Developer</span>
-      <p class="homeText">
-        <span class="marked">Do you</span>wanna build a website?
-      </p>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="section" id='section2'>
-    <div id="DocumentResults"></div>
-    <script id="document-template" type="text/x-handlebars-template">
-      <div class="container-fluid">
-        <div class="row active-with-click">
-          {{#each this}}
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <article class="material-card {{project_theme_color}}">
-              <h2>
-                <span>{{project_name}}</span>
-                <strong>
-                  <a class='project_link' href="{{project_url}}" target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-fw fa-link"></i>
-                  Visit</a>
-                </strong>
-              </h2>
-              <div class="mc-content">
-                <div class="img-container">
-                  <img class="img-responsive" src="./static/img/{{project_thumbnail}}">
-                </div>
-                <div class="mc-description">
-                  {{description}}
-                </div>
-              </div>
-              <a class="mc-btn-action">
-                <i class="fa fa-bars"></i>
-              </a>
-              <div class="mc-footer">
-                <h4>
-                  Used
-                </h4>
-                {{splitTech tech_used}}
-              </div>
-            </article>
-          </div>
-          {{/each}}
-        </div>
+  <div id="fullpage">
+    <!-- Home -->
+    <div class="section" id='section1'>
+      <div class="homeContent">
+        <!-- <img src="http://placehold.it/3000x3000/cf5"> -->
+        <div class="homeHeading"> <span class="marked">Mou</span>Mohsen</div>
+        <span>Geeky Backend Developer</span>
+        <p class="homeText">
+          <span class="marked">Do you</span>wanna build a website?
+        </p>
       </div>
-    </script>
-  </div>
+    </div>
 
-  <!-- Projects -->
-  <div class="section" id='section3'>
-    <div class="container">
-      <div class='row'>
-        <div class="col-md-6">
-          <h1>Tools I Use</h1>
-<p>
-  I use whatever best to get the work done
-</p>
-<div id='tech_used'>
+    <!-- Services -->
+    <div class="section" id='section2'>
+      <div id="DocumentResults"></div>
+      <script id="document-template" type="text/x-handlebars-template">
+        <div class="container-fluid">
+          <div class="row active-with-click">
+            {{#each this}}
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <article class="material-card {{project_theme_color}}">
+                <h2>
+                  <span>{{project_name}}</span>
+                  <strong>
+                    <a class='project_link' href="{{project_url}}" target="_blank" rel="noopener noreferrer">
+                      <i class="fa fa-fw fa-link"></i>
+                      Visit</a>
+                    </strong>
+                  </h2>
+                  <div class="mc-content">
+                    <div class="img-container">
+                      <img class="img-responsive" src="./static/img/{{project_thumbnail}}">
+                    </div>
+                    <div class="mc-description">
+                      {{description}}
+                    </div>
+                  </div>
+                  <a class="mc-btn-action">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                  <div class="mc-footer">
+                    <h4>
+                      Used
+                    </h4>
+                    {{splitTech tech_used}}
+                  </div>
+                </article>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </script>
+      </div>
 
-</div>
-<script>
-const techs = [
+      <!-- Projects -->
+      <div class="section" id='section3'>
+        <div class="container">
+          <div class='row'>
+            <div class="col-md-6">
+              <h1>Tools I Use</h1>
+              <p>
+                I use whatever best to get the work done
+              </p>
+              <div id='tech_used'>
+
+              </div>
+              <script>
+              const techs = [
   'php',
   'drupal',
   'wordpress',
@@ -182,29 +187,29 @@ const wrapTech = techs.map(tech => {
 </script>
 
 
-        </div>
-        <div class="col-md-6">
-          <h1>To do ...</h1>
-          <p>
-            I use whatever best to get the work done
-          </p>
+          </div>
+          <div class="col-md-6">
+            <h1>To do ...</h1>
+            <p>
+              I use whatever best to get the work done
+            </p>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact -->
+    <div class="section" id='section4'>
+      Four
+    </div>
+
   </div>
 
-  <!-- Contact -->
-  <div class="section" id='section4'>
-    Four
-  </div>
-
-</div>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="./static/js/fullpage.extensions.min.js"></script>
-<script type="text/javascript" src="./static/js/scrolloverflow.min.js"></script>
-<script>
-new fullpage('#fullpage', {
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./static/js/fullpage.extensions.min.js"></script>
+  <script type="text/javascript" src="./static/js/scrolloverflow.min.js"></script>
+  <script>
+  new fullpage('#fullpage', {
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   anchors: ['home', 'projects', 'services', 'contact'],
   sectionsColor: ['#393F42', '#000', '#393F42', '#000'],
