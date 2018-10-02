@@ -1,0 +1,365 @@
+body {
+  /* font-family: 'Muli'; */
+  color: white;
+}
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  background-size: cover;
+}
+
+#section1 {
+  background-image: url(../img/section1.jpg);
+}
+
+/* #section3 {
+  background-image: url(./section3.jpg);
+} */
+.section {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+/* .servicesHead {
+  position: absolute;
+  top: 50px;
+} */
+
+.navigation {
+  width: 100%;
+  text-align: center;
+}
+
+#next {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  color: white;
+  background-color: #008fb0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transition: left 0.5s ease-in-out 0ms;
+
+  /* -ms-transform: rotate(450deg);
+  -webkit-transform: rotate(450deg);
+  transform: rotate(450deg); */
+}
+
+#menu {
+  /* transform: translateX(-50%); */
+  position: fixed;
+  z-index: 999;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  height: 50px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50px;
+  padding: 25px;
+}
+a.menu-item {
+  display: none;
+  text-decoration: none;
+  color: white;
+  width: max-content;
+  /* -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg); */
+}
+a.menu-item.active {
+  display: block;
+}
+.logo-icon {
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: #008fb0;
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 0;
+  overflow-x: visible;
+}
+
+#sidebar-menu {
+  position: absolute;
+  top: 0;
+  left: -320px;
+  width: 280px;
+  height: 100%;
+  background-color: #008fb0;
+  z-index: -1;
+  padding-top: 75px;
+  border: none;
+  transition: left 0.5s ease-in-out 0ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.menu-item2 {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.close-btn {
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -45px;
+  right: 5px;
+}
+
+#overlay {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 1s 0.4s;
+}
+#progress {
+  height: auto;
+  background: #fff;
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 50%;
+}
+#progstat {
+  font-size: 0.7em;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 3rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+}
+
+a.project_link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575px) {
+  .container {
+    margin-top: 17%;
+  }
+  #menu {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+  }
+  a.menu-item {
+    display: none;
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+  .container {
+    margin-top: 17%;
+  }
+  #menu {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+  }
+  a.menu-item {
+    display: none;
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+} */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .close-btn {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* .section {
+  width: 95%;
+} */
+/*
+ul#menu {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 1px black;
+  border-radius: 25px;
+  margin: 0 15px 0 15px;
+} */
+
+.homeContent {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+p.homeText {
+  font-size: 2rem;
+  font-family: 'Muli';
+  font-weight: bold;
+}
+
+.homeHeading {
+  font-size: 5vw;
+  font-family: 'Muli';
+  /* margin-top: 2vw; */
+  letter-spacing: 10px;
+}
+.marked {
+  background-color: #008fb0;
+}
+
+#cover {
+  background: url('http://www.aveva.com/Images/ajax-loader.gif') no-repeat
+    scroll center center #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+img.imgDiv {
+  /* width: 100px; */
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* .child {
+  display: inline-block;
+  margin: 10px 0 0 2%;
+  flex-grow: 1;
+  height: 100px;
+  width: calc(100% * (1 / 4) - 10px - 1px);
+} */
+
+/* API */
+
+/*
+.card:nth-child(2n) h1.cardHeading {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.card:nth-child(4n) h1.cardHeading {
+  background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.card:nth-child(5n) h1.cardHeading {
+  background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+} */
+
+/* .cardDesc {
+  background-color: grey;
+  opacity: 0;
+}
+.cardDesc:hover {
+  opacity: 1;
+} */
+
+#DocumentResults {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
